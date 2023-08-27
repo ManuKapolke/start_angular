@@ -1,3 +1,6 @@
+$mk-blue: #5fbddf;
+$mk-lightblue: #c5e7f3;
+
 .slideshow-container {
     width: 100vw;
     height: 100vh;
@@ -31,12 +34,11 @@
     background-color: rgba(0, 0, 0, 0.4);
 
     p {
-        font-family: 'Open Sans', sans-serif;
         color: white;
         font-size: 80px;
         font-weight: 600;
         max-width: 1000px;
-        border-left: 8px solid #5fbddf;
+        border-left: 8px solid $mk-blue;
         padding-left: 40px;
         margin-left: 120px;
     }
