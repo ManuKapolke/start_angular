@@ -1,8 +1,11 @@
 $mk-blue: #5fbddf;
 $mk-lightblue: #c5e7f3;
+$mk-black: #404040;
+$mk-yellow: #ffe699;
 
 header {
     position: fixed;
+    top: 0;
     left: 0;
     right: 0;
     height: 80px;
@@ -14,13 +17,15 @@ header {
 
     img {
         height: 40px;
+        cursor: pointer;
     }
 
     nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 40%;
+        gap: 20px;
+        min-width: 40%;
 
         a {
             font-size: 21px;
@@ -31,6 +36,19 @@ header {
             &:hover {
                 color: $mk-lightblue;
             }
+        }
+    }
+}
+
+.darkHeader {
+    background-color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+
+    nav a {
+        color: $mk-black;
+
+        &:hover {
+            color: $mk-yellow;
         }
     }
 }
